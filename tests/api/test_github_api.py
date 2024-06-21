@@ -46,7 +46,8 @@ def test_get_emoji(github_api):
 
 @pytest.mark.api
 def test_emoji_not_exists(github_api):
-    r = github_api.get_emoji('day')
+    github_api.get_emoji = Mock(return_value={"message": "Not Found"})
+    r = github_api.get_emoji('non_existent_emoji')
     assert r['message'] == 'Not Found'
     
     

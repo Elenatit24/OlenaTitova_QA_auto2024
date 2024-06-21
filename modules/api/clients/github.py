@@ -27,7 +27,7 @@ class GitHub:
 
 
     def get_emoji(self, smile):
-        r = requests.get(f"https://api.github.com/emojis/{smile}")
+        r = requests.get(f"https://https://api.github.com/emojis/{smile}")
         body = r.json()
 
 

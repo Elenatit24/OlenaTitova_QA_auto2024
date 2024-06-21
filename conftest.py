@@ -38,8 +38,8 @@ def github_api():
 
     
     yield api
-
     
+
 @pytest.fixture
 def emoji():
     emoji = Emoji()
@@ -50,3 +50,5 @@ def emoji():
 
 
     emoji.remove()
+    
+
