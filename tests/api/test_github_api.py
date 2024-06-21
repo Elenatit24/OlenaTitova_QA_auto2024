@@ -35,6 +35,8 @@ def test_repo_with_single_char_be_found(github_api):
 
 
 # individual task
+
+
 @pytest.mark.api
 def test_get_emoji(github_api):
     github_api.get_emoji = Mock(return_value={"smile": "defunkt"})
