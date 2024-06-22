@@ -23,7 +23,7 @@ class GitHub:
         return body
 
 
-    # individual task
+    # individual task 1
 
 
     def get_emoji(self, smile):
